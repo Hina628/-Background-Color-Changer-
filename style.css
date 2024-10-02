@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(red, green, blue)
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 8rem;
+    text-decoration: underline;
+    flex-wrap: wrap;
+
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+button:hover {
+    color: black;
+    background-color: #006666;
+}
+
+@keyframes bodySlideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    animation: bodySlideIn 2s ease-out;
+}
+
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    body {
+        animation: bodySlideIn 1.5s ease-out;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 6rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 0.9rem;
+        margin: 0.8rem;
+    }
+}
+
+
+@media (min-width: 901px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+}
